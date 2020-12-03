@@ -4,7 +4,7 @@ import socketIOClient from "socket.io-client";
 
 // Name of the event
 const EVENT_CHAT_PESAN_BARU = "obrolanPesanBaru";
-const SOCKET_SERVER_URL = "http://localhost:3000";
+const SOCKET_SERVER_URL = "http://localhost:3001";
 
 function useChat(roomId) {
   // (useState) Kirim dan menerima pesan
