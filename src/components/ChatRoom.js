@@ -3,8 +3,13 @@ import "./ChatRoom.css";
 
 function ChatRoom() {
   return (
-    <div>
-      <h1>Ini chat room</h1>
+    <div className="chat-room-container">
+      <h1 className="room-name">Room: </h1>
+      <textarea
+        placeholder="Write message..."
+        className="new-message-input-field"
+      />
+      <button>Kirim pesan</button>
     </div>
   );
 }
