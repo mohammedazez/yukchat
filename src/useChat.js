@@ -7,8 +7,9 @@ const EVENT_CHAT_PESAN_BARU = "obrolanPesanBaru";
 const SOCKET_SERVER_URL = "http://localhost:3001";
 
 function useChat(roomId) {
-  // (useState) Kirim dan menerima pesan
+  // Kirim dan menerima pesan
   const [pesan, setPesan] = useState([]);
+  console.log(pesan);
   const socketRef = useRef();
 
   useEffect(() => {

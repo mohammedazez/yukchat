@@ -10,19 +10,21 @@ function ChatRoom(props) {
 
   // Membuat web socket dan mengelola pesan
   const { pesan, kirimPesan } = useChat(roomId);
+  // console.log(pesan);
 
   // Pesan yang akan dikirim
   const [pesanBaru, setPesanBaru] = useState("");
+  // console.log(pesanBaru);
 
   const handlepesanBaruBerubah = (event) => {
     setPesanBaru(event.target.value);
-    console.log(handlepesanBaruBerubah);
+    // console.log(handlepesanBaruBerubah);
   };
 
   const handleKirimPesan = () => {
     kirimPesan(pesanBaru);
     setPesanBaru("");
-    console.log(handleKirimPesan);
+    // console.log(handleKirimPesan);
   };
 
   return (
